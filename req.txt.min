@@ -1,0 +1,6 @@
+transformers
+torch
+pillow
+torchserve
+torch-model-archiver
+pandas
