@@ -17,11 +17,14 @@ cd vit-batch
 ## Run following command
 
 docker run --rm -it -d --name vit \
-    -p 0.0.0.0:9085:9085 -p 0.0.0.0:9086:9086 \ 
-    -p 0.0.0.0:9087:9087 -p 0.0.0.0:9070:9070  \
-    -p 0.0.0.0:9071:9071  \
-    -v ./config.properties:/home/model-server/config.properties  \
-    aruntiwary/vit_torchserve_batch_image:v1 
+-p 0.0.0.0:9085:9085 \
+-p 0.0.0.0:9086:9086 \
+-p 0.0.0.0:9087:9087 \
+-p 0.0.0.0:9070:9070 \
+-p 0.0.0.0:9071:9071 \
+-v ./config.properties:/home/model-server/config.properties \
+sarthakd112/vit_torchserve_batch_image:v1
+
 
 ## To run batch inference 
 python infer_batch.py
