@@ -34,5 +34,7 @@ python infer_batch.py
 ```
 
 ## To Kill ports
+```sh
 lsof -i :7070
 kill -9 <pid>
+```
